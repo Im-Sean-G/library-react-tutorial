@@ -225,7 +225,8 @@ LANDING
 */
 
 #landing {
-  background-color: rgba(115, 66, 214, 0.1)
+  background-color: rgba(115, 66, 214, 0.1);
+  padding: 20px 0;
 }
 
 header {
@@ -240,6 +241,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 }
 
 .header__description {
@@ -258,6 +260,11 @@ header {
   /* Added this after the tutorial to 
   make landing page responsive on laptops */
   max-height: 50vh;
+}
+
+.header__img {
+  height: 50vw;
+  max-width: 400px;
 }
 
 .container {
@@ -361,9 +368,20 @@ FEATURES
 
 */
 
-#features {
+#features,
+#featured {
   padding-top: 8vw;
   background-color: rgba(115, 66, 214, 0.1);
+}
+
+#featured .books {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 0 -24px;
+}
+
+#featured .book {
+  width: auto;
 }
 
 .books {
@@ -787,6 +805,10 @@ select {
 
   .book {
     width: 50%;
+  }
+
+  #featured .books {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .book__selected {

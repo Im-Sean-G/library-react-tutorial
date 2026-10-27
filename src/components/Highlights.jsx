@@ -27,6 +27,7 @@ const Highlights = () => {
               title="Affordable"
               para="Get your hands on popular books for as little as $10."
             />
+
           </div>
         </div>
       </div>

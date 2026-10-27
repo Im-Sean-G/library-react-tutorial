@@ -13,7 +13,7 @@ const Landing = () => {
           </a>
         </div>
         <figure className="header__img--wrapper">
-          <img src="{UndrawBooks}" alt="" className="" />
+          <img src={UndrawBooks} alt="" className="header__img" />
         </figure>
       </div>
     </section>
