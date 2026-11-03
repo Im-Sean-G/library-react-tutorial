@@ -31,7 +31,7 @@ const Books = ({ books: initialBooks }) => {
                   id="filter" 
                   defaultValue="DEFAULT" 
                   onChange={(event) => filterBooks(event.target.value)}>
-                  <option value="" selected disabled>
+                  <option value="DEFAULT" disabled>
                     Sort
                   </option>
                   <option value="LOW_TO_HIGH">Price, Low to High</option>
